@@ -27,7 +27,7 @@ const Card = () => {
     console.log(dataReceived)
     console.log(pokeCardsData.length > 0)
 
-    const mappedCards = pokeCardsData.length > 0?.map((card, id) => {
+    const mappedCards = dataReceived ? pokeCardsData.map((card, id) => {
 
         return (
 
@@ -56,12 +56,12 @@ const Card = () => {
             </Box>
         </Box>
         )
-    })
+    }) : null
 
 
   return (
 
-        <>{(pokeCardsData.length > 0) ?  mappedCards : null}</>
+        <>{mappedCards}</>
   )
 }
 
