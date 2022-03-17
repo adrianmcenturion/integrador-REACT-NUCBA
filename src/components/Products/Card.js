@@ -27,7 +27,7 @@ const Card = () => {
     console.log(dataReceived)
     console.log(pokeCardsData.length > 0)
 
-    const mappedCards = pokeCardsData.map((card, id) => {
+    const mappedCards = pokeCardsData.length > 0?.map((card, id) => {
 
         return (
 
