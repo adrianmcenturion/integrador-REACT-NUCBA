@@ -57,7 +57,7 @@ const Card = () => {
 
   return (
 
-        <>{mappedCards}</>
+        // <>{mappedCards}</>
   )
 }
 
