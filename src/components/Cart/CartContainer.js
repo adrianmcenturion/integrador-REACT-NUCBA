@@ -42,8 +42,8 @@ const CartContainer = () => {
               </Flex>}
               <Box ml={4} display='flex' flexDirection='column' alignItems='flex-start' justifyContent='space-between'>
                 <Text fontSize='xs'>{item.name}</Text>
-                <Text fontSize='xs'>Set: {item.set.name}</Text>
-                <Text fontSize='xs'>Rarity: {item.rarity}</Text>
+                <Text fontSize='xx-small'>Set: {item.set.name}</Text>
+                <Text fontSize='xx-small'>Rarity: {item.rarity}</Text>
                 {isMobile ? <Button mt={4} size='xs' fontSize='xs' variant='link' fontWeight='medium' onClick={() => {handleRemoveFromCart(item)}}>Remove</Button> : null}
               </Box>
             </GridItem>
