@@ -1,4 +1,4 @@
-import { Badge, Box, Flex, Image, Text, Button, Spacer, useToast } from "@chakra-ui/react"
+import { Badge, Box, Flex, Image, Text, Button, Spacer, useToast, Spinner } from "@chakra-ui/react"
 import { useDispatch, useSelector } from "react-redux"
 import typeColor from "./TypesColors"
 import { AddToCartAction } from "../../redux/CartSlice"
