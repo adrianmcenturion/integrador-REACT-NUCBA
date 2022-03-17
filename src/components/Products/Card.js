@@ -21,13 +21,8 @@ const Card = () => {
     }
 
     const pokeCardsData = useSelector(state => state.products.productsData)
-    
-    const dataReceived = useSelector(state => state.products.dataReceived)
 
-    console.log(dataReceived)
-    console.log(pokeCardsData.length > 0)
-
-    const mappedCards = dataReceived ? pokeCardsData.map((card, id) => {
+    const mappedCards = (pokeCardsData.length > 0) ? pokeCardsData.map((card, id) => {
 
         return (
 

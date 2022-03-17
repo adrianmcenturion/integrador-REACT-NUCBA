@@ -20,9 +20,6 @@ const LoginForm = () => {
 
     const dispatch = useDispatch();
 
-    console.log(password)
-
-
     const onLogin = () => {
       dispatch(LoginAction({ email, password }));
   }
