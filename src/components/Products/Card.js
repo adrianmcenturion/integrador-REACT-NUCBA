@@ -1,4 +1,4 @@
-import { Badge, Box, Flex, Image, Text, Button, Spacer, useToast, Spinner } from "@chakra-ui/react"
+import { Badge, Box, Flex, Image, Text, Button, Spacer, useToast } from "@chakra-ui/react"
 import { useDispatch, useSelector } from "react-redux"
 import typeColor from "./TypesColors"
 import { AddToCartAction } from "../../redux/CartSlice"
@@ -21,7 +21,8 @@ const Card = () => {
     }
 
     const pokeCardsData = useSelector(state => state.products.productsData)
-    console.log(pokeCardsData)
+    
+    const dataReceived = useSelector(state => state.products.dataReceived)
 
     const mappedCards = pokeCardsData.map((card, id) => {
 
@@ -57,7 +58,7 @@ const Card = () => {
 
   return (
 
-        <>{pokeCardsData.length > 0 ?  mappedCards : <Flex gap={4} alignItems='center'><Text>Loading</Text><Spinner size='md' thickness="2px" emptyColor="red.500" color="white.500"/></Flex>}</>
+        <>{dataReceived ?  mappedCards : <Flex gap={4} alignItems='center'><Text>Loading</Text><Spinner size='md' thickness="2px" emptyColor="red.500" color="white.500"/></Flex>}</>
   )
 }
 
