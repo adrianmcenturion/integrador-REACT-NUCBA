@@ -20,9 +20,10 @@ const Card = () => {
         })
     }
 
-    let pokeCardsData = useSelector(state => state.products.productsData)
+    const pokeCardsData = useSelector(state => state.products.productsData)
+    console.log(pokeCardsData)
 
-const mappedCards = pokeCardsData.map((card, id) => {
+    const mappedCards = pokeCardsData.map((card, id) => {
 
         return (
 
