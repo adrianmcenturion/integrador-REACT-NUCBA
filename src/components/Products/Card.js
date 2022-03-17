@@ -57,7 +57,10 @@ const Card = () => {
 
   return (
 
-        // <>{mappedCards}</>
+        <>
+        {/* {mappedCards} */}
+        <h2>awsd</h2>
+        </>
   )
 }
 
